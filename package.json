@@ -6,7 +6,7 @@
   "repository": "git@github.com:raphaelsalviano/react-native-realm-aggreate.git",
   "author": "Raphael Salviano",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "keywords": [
     "realm",
     "aggregation",
