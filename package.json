@@ -1,12 +1,12 @@
 {
   "name": "react-native-realm-aggreate",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Pipelines de agregação para Realm",
   "main": "src/index.ts",
   "repository": "git@github.com:raphaelsalviano/react-native-realm-aggreate.git",
   "author": "Raphael Salviano",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "keywords": [
     "realm",
     "aggregation",
