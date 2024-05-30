@@ -1,7 +1,7 @@
 import { OperationsObject } from '../types';
 import { SUPPORTED_OPERATIONS } from '../constants';
-import { firstOperation } from './first.ts';
-import { filterOperation } from './filter.ts';
+import { firstOperation } from './first';
+import { filterOperation } from './filter';
 
 const operations: OperationsObject = {
   $first: firstOperation,

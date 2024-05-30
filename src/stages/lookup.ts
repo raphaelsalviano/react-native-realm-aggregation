@@ -1,6 +1,6 @@
 import type { DefaultObject } from '../types';
 import type Realm from 'realm';
-import { aggregateInternal } from '../utils/aggregate.ts';
+import { aggregateInternal } from '../utils/aggregate';
 
 export function lookupStage(
   collection: DefaultObject[],

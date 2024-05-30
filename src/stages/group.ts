@@ -1,6 +1,6 @@
 import type { DefaultObject } from '../types';
 import type Realm from 'realm';
-import { extractIdentifier } from '../utils/identifier.ts';
+import { extractIdentifier } from '../utils/identifier';
 import { executeOperation } from '../operations';
 
 export function groupStage(
