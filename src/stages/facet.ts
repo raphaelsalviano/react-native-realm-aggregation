@@ -1,6 +1,6 @@
 import type Realm from 'realm';
 import type { DefaultObject } from '../types';
-import { aggregateInternal } from '../utils/aggregate.ts';
+import { aggregateInternal } from '../utils/aggregate';
 
 export function facetStage(
   collection: DefaultObject[],

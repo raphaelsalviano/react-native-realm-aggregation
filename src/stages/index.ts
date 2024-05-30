@@ -1,15 +1,15 @@
 import type { StagesObject } from '../types';
 
-import { matchStage } from './match.ts';
-import { groupStage } from './group.ts';
-import { sortStage } from './sort.ts';
-import { lookupStage } from './lookup.ts';
-import { replaceRootStage } from './replaceRoot.ts';
-import { projectStage } from './project.ts';
-import { unwindStage } from './unwind.ts';
-import { addFieldsStage } from './addFields.ts';
-import { facetStage } from './facet.ts';
-import { countStage } from './count.ts';
+import { matchStage } from './match';
+import { groupStage } from './group';
+import { sortStage } from './sort';
+import { lookupStage } from './lookup';
+import { replaceRootStage } from './replaceRoot';
+import { projectStage } from './project';
+import { unwindStage } from './unwind';
+import { addFieldsStage } from './addFields';
+import { facetStage } from './facet';
+import { countStage } from './count';
 
 const stages: StagesObject = {
   $match: matchStage,
