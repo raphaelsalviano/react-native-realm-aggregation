@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "module": "es2015",
+    "module": "commonjs",
     "types": ["node"],
     "lib": [
       "es2019",
@@ -19,18 +19,21 @@
       "es2022.string"
     ],
     "allowJs": true,
-    "noEmit": true,
+    "noEmit": false,
     "isolatedModules": true,
     "strict": true,
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
+    "moduleResolution": "node",
     "allowArbitraryExtensions": true,
     "resolveJsonModule": true,
     "resolvePackageJsonImports": false,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
+    "declaration": true,
     // Causes issues with package.json "exports"
-    "forceConsistentCasingInFileNames": false
-  }
+    "forceConsistentCasingInFileNames": false,
+    "outDir": "./dist",
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }

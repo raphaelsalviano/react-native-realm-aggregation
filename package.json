@@ -1,8 +1,9 @@
 {
   "name": "react-native-realm-aggreate",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Pipelines de agregação para Realm",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "git@github.com:raphaelsalviano/react-native-realm-aggreate.git",
   "author": "Raphael Salviano",
   "license": "MIT",
@@ -13,21 +14,23 @@
     "pipeline",
     "react-native"
   ],
+  "files": ["dist"],
   "scripts": {
-    "prepare": "npx husky install"
+    "prepare": "npx husky install",
+    "prepack": "tsc"
   },
   "peerDependencies": {
     "realm": ">=12.4.0",
     "typescript": ">=4.8.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.3.0",
-    "@commitlint/config-conventional": "^19.2.2",
+    "@commitlint/cli": "^17.8.1",
+    "@commitlint/config-conventional": "^17.8.1",
     "@types/node": "^20.12.11",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "prettier": "^3.2.5",
-    "realm": "^12.8.0",
+    "realm": "12.5.0",
     "typescript": "5.0.4"
   },
   "dependencies": {
@@ -37,5 +40,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "engines": {
+    "node": ">=16"
   }
 }
