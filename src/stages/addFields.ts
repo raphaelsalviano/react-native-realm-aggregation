@@ -18,7 +18,7 @@ export function addFieldsStage(
   if (!pipeline || typeof pipeline !== 'object')
     throw new Error('$addFields stage needs a query object.');
 
-  return collection.map((item) => {
+  return collection?.map((item) => {
     for (const [newField, expression] of Object.entries(pipeline)) {
       if (typeof expression === 'string') {
         if (expression[0] === '$') {

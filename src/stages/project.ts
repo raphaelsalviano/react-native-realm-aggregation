@@ -6,7 +6,7 @@ export function projectStage(
   pipeline: any,
   realm: Realm
 ) {
-  return collection.map((item) => {
+  return collection?.map((item) => {
     for (const [key, value] of Object.entries(pipeline)) {
       if (value || typeof value === 'string')
         throw new Error('Includes operation not implemented');

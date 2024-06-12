@@ -7,7 +7,7 @@ export function lookupStage(
   pipeline: any,
   realm: Realm
 ) {
-  return collection.map((item) => {
+  return collection?.map((item) => {
     const { from, as, localField, foreignField, ...rest } = pipeline;
     const collectionResult = aggregateInternal(from, rest.pipeline, realm);
 
@@ -16,7 +16,7 @@ export function lookupStage(
 
     if (localFields.length > 1) {
       data = (item[localFields[0]] as any[])
-        .map((itemField: any) =>
+        ?.map((itemField: any) =>
           collectionResult.filter(
             (result) => result[foreignField] === itemField[localFields[1]]
           )
