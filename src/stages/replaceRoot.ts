@@ -6,7 +6,7 @@ export function replaceRootStage(
   pipeline: any,
   realm: Realm
 ) {
-  return collection.map((item) => {
+  return collection?.map((item) => {
     const [[key, value]] = Object.entries(pipeline);
 
     if (!key || key !== 'newRoot')
