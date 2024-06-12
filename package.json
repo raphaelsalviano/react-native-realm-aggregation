@@ -1,6 +1,6 @@
 {
   "name": "react-native-realm-aggreate",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Pipelines de agregação para Realm",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
