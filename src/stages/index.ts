@@ -10,6 +10,8 @@ import { unwindStage } from './unwind';
 import { addFieldsStage } from './addFields';
 import { facetStage } from './facet';
 import { countStage } from './count';
+import { limitStage } from './limit';
+import { skipStage } from './skip';
 
 const stages: StagesObject = {
   $match: matchStage,
@@ -21,7 +23,9 @@ const stages: StagesObject = {
   $unwind: unwindStage,
   $addFields: addFieldsStage,
   $facet: facetStage,
-  $count: countStage
+  $count: countStage,
+  $limit: limitStage,
+  $skip: skipStage
 };
 
 export default stages;

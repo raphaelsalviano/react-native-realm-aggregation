@@ -8,7 +8,9 @@ export const SUPPORTED_STAGES = [
   '$lookup',
   '$facet',
   '$unwind',
-  '$count'
+  '$count',
+  '$limit',
+  '$skip'
 ] as const;
 
 export const SUPPORTED_OPERATIONS = ['$first', '$filter'] as const;
