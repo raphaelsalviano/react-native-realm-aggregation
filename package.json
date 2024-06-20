@@ -1,6 +1,6 @@
 {
   "name": "react-native-realm-aggreate",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "Pipelines de agregação para Realm",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -14,7 +14,9 @@
     "pipeline",
     "react-native"
   ],
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "prepare": "npx husky install",
     "prepack": "tsc"
